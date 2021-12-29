@@ -4,10 +4,16 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/drawable/bottom_navigation_color_selector.xml" value="0.15989583333333332" />
+        <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/drawable/ic_about_black_24dp.xml" value="0.15625" />
+        <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/drawable/nav_background.xml" value="0.15989583333333332" />
+        <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/font/semibold.xml" value="0.2814814814814815" />
+        <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/layout/about_fragment.xml" value="0.1" />
+        <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/layout/fragment_about.xml" value="0.14010416666666667" />
         <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/layout/fragment_dashboard.xml" value="0.27447916666666666" />
         <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/layout/fragment_home.xml" value="0.27447916666666666" />
         <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/layout/fragment_notifications.xml" value="0.27447916666666666" />
         <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.27447916666666666" />
+        <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/menu/nav_background.xml" value="0.14375" />
       </map>
     </option>
   </component>

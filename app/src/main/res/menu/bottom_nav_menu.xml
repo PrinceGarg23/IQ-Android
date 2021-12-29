@@ -5,9 +5,7 @@
     <item
         android:id="@+id/navigation_home"
         android:icon="@drawable/ic_home_black_24dp"
-        android:title="@string/title_home"
-        app:itemBackground="@color/black"
-        app:itemIconTint="#ffffff"/>
+        android:title="@string/title_home" />
 
     <item
         android:id="@+id/navigation_dashboard"
@@ -19,4 +17,8 @@
         android:icon="@drawable/ic_notifications_black_24dp"
         android:title="@string/title_notifications" />
 
+    <item
+        android:id="@+id/navigation_about"
+        android:icon="@drawable/ic_about_black_24dp"
+        android:title="@string/title_about" />
 </menu>

@@ -23,4 +23,10 @@
         android:name="com.example.iqapp.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_about"
+        android:name="com.example.iqapp.ui.about.AboutFragment"
+        android:label="@string/title_about"
+        tools:layout="@layout/about_fragment" />
 </navigation>
