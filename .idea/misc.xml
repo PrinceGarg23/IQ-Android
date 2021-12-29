@@ -3,8 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2796296296296296" />
         <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/drawable/bottom_navigation_color_selector.xml" value="0.15989583333333332" />
         <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/drawable/ic_about_black_24dp.xml" value="0.15625" />
+        <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/drawable/ic_about_us.xml" value="0.15625" />
+        <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/drawable/ic_back.xml" value="0.2796296296296296" />
+        <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/drawable/ic_contact_us.xml" value="0.2796296296296296" />
+        <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.2796296296296296" />
+        <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/drawable/ic_facebook.xml" value="0.2796296296296296" />
+        <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.2796296296296296" />
+        <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/drawable/ic_instagram.xml" value="0.2796296296296296" />
+        <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2796296296296296" />
+        <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/drawable/ic_linkdein.xml" value="0.2796296296296296" />
+        <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/drawable/ic_member_svgrepo_com.xml" value="0.15625" />
+        <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/drawable/ic_next.xml" value="0.2796296296296296" />
+        <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/drawable/ic_settings.xml" value="0.2796296296296296" />
+        <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/drawable/ic_twitter.xml" value="0.15625" />
         <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/drawable/nav_background.xml" value="0.15989583333333332" />
         <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/font/semibold.xml" value="0.2814814814814815" />
         <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/layout/about_fragment.xml" value="0.2" />
