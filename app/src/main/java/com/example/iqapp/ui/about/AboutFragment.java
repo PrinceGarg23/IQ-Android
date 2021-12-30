@@ -26,13 +26,14 @@ public class AboutFragment extends Fragment {
     private AboutViewModel aboutViewModel;
     private AboutFragmentBinding binding;
 
-    private ConstraintLayout contact,linkedin,facebook,instagram,twitter,board;
+    private ConstraintLayout contact,linkedin,facebook,instagram,twitter,youtube,board;
 
     private static final String EMAIL = "contact.iquestvit@gmail.com";
     private static final String FACEBOOK = "https://www.facebook.com/InnovatorsQuest/";
     private static final String TWITTER = "https://twitter.com/innovatorsvit/";
     private static final String INSTAGRAM = "https://www.instagram.com/iquest.vit/";
     private static final String LINKEDIN = "https://www.linkedin.com/company/innovatorsquest/";
+    private static final String YOUTUBE = "https://www.youtube.com/channel/UC07_a96S__f53ySk_5H7jCA";
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -54,6 +55,7 @@ public class AboutFragment extends Fragment {
         facebook = getView().findViewById(R.id.facebookSettings);
         instagram = getView().findViewById(R.id.instagramSettings);
         twitter = getView().findViewById(R.id.twitterSettings);
+        youtube = getView().findViewById(R.id.youtubeSettings);
 
         contact.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -97,6 +99,15 @@ public class AboutFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Uri uri = Uri.parse(INSTAGRAM);
+                Intent intent = new Intent(Intent.ACTION_VIEW,uri);
+                v.getContext().startActivity(intent);
+            }
+        });
+
+        youtube.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri uri = Uri.parse(YOUTUBE);
                 Intent intent = new Intent(Intent.ACTION_VIEW,uri);
                 v.getContext().startActivity(intent);
             }

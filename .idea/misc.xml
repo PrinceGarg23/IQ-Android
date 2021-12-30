@@ -19,9 +19,11 @@
         <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/drawable/ic_next.xml" value="0.2796296296296296" />
         <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/drawable/ic_settings.xml" value="0.2796296296296296" />
         <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/drawable/ic_twitter.xml" value="0.15625" />
+        <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/drawable/ic_youtube.xml" value="0.15260416666666668" />
         <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/drawable/nav_background.xml" value="0.15989583333333332" />
         <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/font/semibold.xml" value="0.2814814814814815" />
-        <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/layout/about_fragment.xml" value="0.2" />
+        <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/layout/about_fragment.xml" value="0.1" />
+        <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/layout/fragment_about.xml" value="0.14010416666666667" />
         <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/layout/fragment_dashboard.xml" value="0.27447916666666666" />
         <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/layout/fragment_home.xml" value="0.27447916666666666" />

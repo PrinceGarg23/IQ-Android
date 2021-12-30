@@ -11,5 +11,6 @@ public class AboutViewModel extends ViewModel {
     // TODO: Implement the ViewModel
 
     public AboutViewModel() {
+
     }
 }
