@@ -370,7 +370,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
                 android:layout_marginLeft="15dp"
-                android:text="Board 2021"
+                android:text="Board 2022"
                 android:textColor="?attr/colorOnPrimary"
                 android:textSize="15dp"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView13"

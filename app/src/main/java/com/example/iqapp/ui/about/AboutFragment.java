@@ -18,6 +18,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.iqapp.BoardActivity;
 import com.example.iqapp.R;
 import com.example.iqapp.databinding.AboutFragmentBinding;
 
@@ -56,6 +57,7 @@ public class AboutFragment extends Fragment {
         instagram = getView().findViewById(R.id.instagramSettings);
         twitter = getView().findViewById(R.id.twitterSettings);
         youtube = getView().findViewById(R.id.youtubeSettings);
+        board = getView().findViewById(R.id.boardSettings);
 
         contact.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -110,6 +112,14 @@ public class AboutFragment extends Fragment {
                 Uri uri = Uri.parse(YOUTUBE);
                 Intent intent = new Intent(Intent.ACTION_VIEW,uri);
                 v.getContext().startActivity(intent);
+            }
+        });
+
+        board.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), BoardActivity.class);
+                startActivity(intent);
             }
         });
     }
