@@ -9,11 +9,5 @@ public class NotificationsViewModel extends ViewModel {
     private MutableLiveData<String> mText;
 
     public NotificationsViewModel() {
-        mText = new MutableLiveData<>();
-        mText.setValue("No New notifications.");
-    }
-
-    public LiveData<String> getText() {
-        return mText;
     }
 }
