@@ -8,4 +8,6 @@
     <string name="title_about">About Us</string>
     <string name="tagline">
 The club envisions a society with better knowledge, awareness, and access to technologies around the globe. We believe in achieving solutions of real world problems through using technologies which are either developing, new or old in an innovative way. </string>
+    <string name="blog_icon">blog icon</string>
+    <string name="our_blogs">Our Blogs</string>
 </resources>
