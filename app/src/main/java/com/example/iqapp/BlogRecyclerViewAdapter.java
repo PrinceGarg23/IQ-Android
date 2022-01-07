@@ -1,6 +1,11 @@
 package com.example.iqapp;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Build;
+import android.text.Html;
+import android.text.Spanned;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,9 +13,16 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
+import androidx.core.text.HtmlCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+
+import org.jsoup.nodes.Document;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,15 +44,32 @@ public class BlogRecyclerViewAdapter extends RecyclerView.Adapter<BlogRecyclerVi
         return new BlogViewHolder(v);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
-    public void onBindViewHolder(@NonNull BlogRecyclerViewAdapter.BlogViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull BlogViewHolder holder, int position) {
         Blog currentBlog = mBlogs.get(position);
         String title = currentBlog.getTitle();
         String thumbnail = currentBlog.getThumbnail();
         String desc = currentBlog.getDescription();
-        Glide.with(mContext).load(thumbnail).placeholder(R.drawable.ic_board).dontAnimate().into(holder.photo);
-        holder.title.setText(title);
-        holder.desc.setText(desc);
+        String link = currentBlog.getLink();
+        Document document = Jsoup.parse(desc);
+        Elements elements = document.select("p");
+        List<String> a = new ArrayList<>();
+        for(Element element : elements){
+            String tagName = element.tagName();
+            a.add(element.text());
+        }
+        Glide.with(mContext).load(thumbnail).placeholder(R.drawable.ic_medium1).dontAnimate().into(holder.photo);
+        holder.title.setText(Html.fromHtml(title,Html.FROM_HTML_MODE_LEGACY));
+        holder.desc.setText(a.get(1));
+        holder.visit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri uri = Uri.parse(link);
+                Intent intent = new Intent(Intent.ACTION_VIEW,uri);
+                v.getContext().startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -52,11 +81,13 @@ public class BlogRecyclerViewAdapter extends RecyclerView.Adapter<BlogRecyclerVi
         ImageView photo;
         TextView title;
         TextView desc;
+        View visit;
         public BlogViewHolder(@NonNull View itemView){
             super(itemView);
             photo = itemView.findViewById(R.id.image);
             title = itemView.findViewById(R.id.title);
             desc = itemView.findViewById(R.id.writer);
+            visit = itemView.findViewById(R.id.link);
         }
     }
     public void swapDataSet(List<Blog> newData){

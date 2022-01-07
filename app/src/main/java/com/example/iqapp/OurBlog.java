@@ -9,11 +9,16 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.LoaderManager;
+import android.content.Context;
 import android.content.Loader;
 import android.app.LoaderManager.LoaderCallbacks;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,9 +33,18 @@ public  class OurBlog extends AppCompatActivity implements LoaderCallbacks<List<
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_our_blog);
-        LoaderManager loaderManager = getLoaderManager();
-        loaderManager.initLoader(LOADER_ID, null, this).forceLoad();
-        blogRecyclerView = findViewById(R.id.blog_re_view);
+        ConnectivityManager connMgr = (ConnectivityManager)
+                getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
+        if (networkInfo != null && networkInfo.isConnected()) {
+            LoaderManager loaderManager = getLoaderManager();
+            loaderManager.initLoader(LOADER_ID, null, this).forceLoad();
+            blogRecyclerView = findViewById(R.id.blog_re_view);
+        }else{
+            View load = findViewById(R.id.loading_indicator);
+            load.setVisibility(View.GONE);
+            Toast.makeText(getApplicationContext(),"No internet Connection",Toast.LENGTH_LONG).show();
+        }
         blogRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         adapter = new BlogRecyclerViewAdapter(OurBlog.this,new ArrayList<>());
         blogRecyclerView.setAdapter(adapter);

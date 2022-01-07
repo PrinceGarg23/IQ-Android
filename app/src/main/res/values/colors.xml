@@ -11,4 +11,5 @@
     <color name="background">#1a1a1a</color>
     <color name="tab_enable">#800000</color>
     <color name="tab_disable">#ffffff</color>
+    <color name="progressBar">#5B86E5</color>
 </resources>
