@@ -9,7 +9,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.LoaderManager;
+import android.content.BroadcastReceiver;
 import android.content.Context;
+import android.content.Intent;
 import android.content.Loader;
 import android.app.LoaderManager.LoaderCallbacks;
 import android.net.ConnectivityManager;
@@ -27,12 +29,14 @@ public  class OurBlog extends AppCompatActivity implements LoaderCallbacks<List<
     private  static  final int LOADER_ID = 1;
     RecyclerView blogRecyclerView;
     BlogRecyclerViewAdapter adapter;
+    View load;
     private static final String MediumApi = "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@documentation.iquestvit";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_our_blog);
+         load = findViewById(R.id.loading_indicator);
         ConnectivityManager connMgr = (ConnectivityManager)
                 getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
@@ -41,9 +45,9 @@ public  class OurBlog extends AppCompatActivity implements LoaderCallbacks<List<
             loaderManager.initLoader(LOADER_ID, null, this).forceLoad();
             blogRecyclerView = findViewById(R.id.blog_re_view);
         }else{
-            View load = findViewById(R.id.loading_indicator);
-            load.setVisibility(View.GONE);
             Toast.makeText(getApplicationContext(),"No internet Connection",Toast.LENGTH_LONG).show();
+            load.setVisibility(View.GONE);
+            return;
         }
         blogRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         adapter = new BlogRecyclerViewAdapter(OurBlog.this,new ArrayList<>());
@@ -58,6 +62,7 @@ public  class OurBlog extends AppCompatActivity implements LoaderCallbacks<List<
 
     @Override
     public void onLoadFinished(Loader<List<Blog>> loader, List<Blog> data) {
+        load.setVisibility(View.GONE);
             adapter.swapDataSet(data);
 
     }
@@ -66,4 +71,5 @@ public  class OurBlog extends AppCompatActivity implements LoaderCallbacks<List<
     public void onLoaderReset(Loader<List<Blog>> loader) {
 
     }
+
 }

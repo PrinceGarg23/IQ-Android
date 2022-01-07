@@ -6,6 +6,7 @@
         <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2796296296296296" />
         <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/drawable/blog_gradient.xml" value="0.15625" />
         <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/drawable/blog_item_gradient.xml" value="0.2111111111111111" />
+        <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/drawable/blue_gradient.xml" value="0.2601851851851852" />
         <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/drawable/bottom_navigation_color_selector.xml" value="0.15989583333333332" />
         <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/drawable/ic_about_black_24dp.xml" value="0.15625" />
         <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/drawable/ic_about_us.xml" value="0.15625" />
@@ -28,7 +29,7 @@
         <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/layout/about_fragment.xml" value="0.1" />
         <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/layout/activity_board.xml" value="0.2608695652173913" />
         <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/layout/activity_our_blog.xml" value="0.14010416666666667" />
+        <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/layout/activity_our_blog.xml" value="0.1" />
         <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/layout/blog_view.xml" value="0.1" />
         <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/layout/board_view.xml" value="0.1" />
         <entry key="..\:/LAPTOP/APPS/IQApp/app/src/main/res/layout/fragment_about.xml" value="0.14010416666666667" />
