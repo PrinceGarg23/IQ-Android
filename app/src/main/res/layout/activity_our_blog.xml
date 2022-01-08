@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:text="Our Blogs"
             android:gravity="center"
-            android:textSize="27dp"
+            android:textSize="27sp"
             android:textColor="?attr/colorOnPrimary"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

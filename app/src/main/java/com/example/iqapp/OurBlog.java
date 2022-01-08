@@ -47,6 +47,7 @@ public  class OurBlog extends AppCompatActivity implements LoaderCallbacks<List<
         }else{
             Toast.makeText(getApplicationContext(),"No internet Connection",Toast.LENGTH_LONG).show();
             load.setVisibility(View.GONE);
+            finish();
             return;
         }
         blogRecyclerView.setLayoutManager(new LinearLayoutManager(this));
