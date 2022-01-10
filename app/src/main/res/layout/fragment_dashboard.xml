@@ -29,8 +29,11 @@
                 android:id="@+id/our_blogs"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:foreground="?attr/selectableItemBackground"
+                android:clickable="true"
                 android:padding="5dp"
-                android:background="@drawable/blue_gradient">
+                android:background="@drawable/blue_gradient"
+                android:focusable="true">
 
                 <ImageView
                     android:id="@+id/blog_icon"
