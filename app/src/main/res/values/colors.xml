@@ -12,4 +12,5 @@
     <color name="tab_enable">#800000</color>
     <color name="tab_disable">#ffffff</color>
     <color name="progressBar">#5B86E5</color>
+    <color name="ripple_color">#dd0a37</color>
 </resources>
