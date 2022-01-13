@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@color/ripple_color" android:state_checked="true" />
-    <item android:drawable="@android:color/black"/>
+    <item  android:state_checked="true" >
+        <shape  >
+            <solid android:color="@color/ripple_color"/>
+            <corners
+                android:radius="17dp"/>
+        </shape>
+    </item>
+    <item >
+        <shape  >
+            <solid android:color="@color/black"/>
+            <corners
+                android:radius="17dp"/>
+        </shape>
+    </item>
 </selector>

@@ -5,10 +5,10 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
+    <color name="black">#1a1a1a</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="background">#1a1a1a</color>
+    <color name="background">#000000</color>
     <color name="tab_enable">#800000</color>
     <color name="tab_disable">#ffffff</color>
     <color name="progressBar">#5B86E5</color>
