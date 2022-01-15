@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1029936555771",
+    "project_id": "iq-app-b78ad",
+    "storage_bucket": "iq-app-b78ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1029936555771:android:1083fc6493deb440d6b25e",
+        "android_client_info": {
+          "package_name": "com.example.iqapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1029936555771-8f0ogpinb3i5tbfoelahoimok28edk39.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG51EORT9CMT-uqJJa1jfogH4f1NrcLG4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1029936555771-8f0ogpinb3i5tbfoelahoimok28edk39.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

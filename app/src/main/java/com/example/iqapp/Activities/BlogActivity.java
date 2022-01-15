@@ -1,31 +1,28 @@
-package com.example.iqapp;
+package com.example.iqapp.Activities;
 
-import static com.example.iqapp.Utils.LOG_TAG;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.LoaderManager;
-import android.content.BroadcastReceiver;
 import android.content.Context;
-import android.content.Intent;
 import android.content.Loader;
 import android.app.LoaderManager.LoaderCallbacks;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
+
+import com.example.iqapp.Adapters.BlogRecyclerViewAdapter;
+import com.example.iqapp.Blog;
+import com.example.iqapp.BlogLoader;
+import com.example.iqapp.R;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public  class OurBlog extends AppCompatActivity implements LoaderCallbacks<List<Blog>>{
+public  class BlogActivity extends AppCompatActivity implements LoaderCallbacks<List<Blog>>{
     private  static  final int LOADER_ID = 1;
     RecyclerView blogRecyclerView;
     BlogRecyclerViewAdapter adapter;
@@ -51,7 +48,7 @@ public  class OurBlog extends AppCompatActivity implements LoaderCallbacks<List<
             return;
         }
         blogRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        adapter = new BlogRecyclerViewAdapter(OurBlog.this,new ArrayList<>());
+        adapter = new BlogRecyclerViewAdapter(BlogActivity.this,new ArrayList<>());
         blogRecyclerView.setAdapter(adapter);
 
     }

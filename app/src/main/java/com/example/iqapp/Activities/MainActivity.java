@@ -1,7 +1,8 @@
-package com.example.iqapp;
+package com.example.iqapp.Activities;
 
 import android.os.Bundle;
 
+import com.example.iqapp.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;

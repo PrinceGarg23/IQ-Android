@@ -3,6 +3,8 @@ package com.example.iqapp;
 import android.text.TextUtils;
 import android.util.Log;
 
+import com.example.iqapp.Activities.BlogActivity;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -19,7 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public final class Utils {
-    public static final String LOG_TAG = OurBlog.class.getName();
+    public static final String LOG_TAG = BlogActivity.class.getName();
     private Utils(){}
     private static URL createUrl(String stringUrl) {
         URL url = null;

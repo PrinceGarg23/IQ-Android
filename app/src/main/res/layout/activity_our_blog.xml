@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:background="?attr/colorPrimary"
     android:fillViewport="true"
-    tools:context=".OurBlog">
+    tools:context=".Activities.BlogActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

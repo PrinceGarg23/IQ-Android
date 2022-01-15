@@ -1,8 +1,6 @@
 package com.example.iqapp.ui.about;
 
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
 
 import android.content.Intent;
@@ -16,16 +14,15 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
-import com.example.iqapp.BoardActivity;
+import com.example.iqapp.Activities.BoardActivity;
 import com.example.iqapp.R;
-import com.example.iqapp.databinding.AboutFragmentBinding;
+import com.example.iqapp.databinding.FragmentAboutBinding;
 
 public class AboutFragment extends Fragment {
 
     private AboutViewModel aboutViewModel;
-    private AboutFragmentBinding binding;
+    private FragmentAboutBinding binding;
 
     private ConstraintLayout contact,linkedin,facebook,instagram,twitter,youtube,board;
 
@@ -41,7 +38,7 @@ public class AboutFragment extends Fragment {
         aboutViewModel =
                 new ViewModelProvider(this).get(AboutViewModel.class);
 
-        binding = AboutFragmentBinding.inflate(inflater, container, false);
+        binding = FragmentAboutBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
 

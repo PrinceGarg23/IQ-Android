@@ -1,10 +1,13 @@
-package com.example.iqapp;
+package com.example.iqapp.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+
+import com.example.iqapp.Adapters.BoardRecyclerViewAdapter;
+import com.example.iqapp.R;
 
 public class BoardActivity extends AppCompatActivity {
 
