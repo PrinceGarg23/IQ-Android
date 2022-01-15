@@ -12,6 +12,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.IQApp">
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="true"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
         <activity
             android:name=".Activities.EventActivity"
             android:exported="false" />
@@ -32,8 +41,8 @@
             android:exported="false" />
         <activity
             android:name=".Activities.MainActivity"
-            android:exported="true"
-            android:label="@string/app_name"></activity>
+            android:exported="false"
+            android:label="@string/app_name" />
     </application>
 
 </manifest>
