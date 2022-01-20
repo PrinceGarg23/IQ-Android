@@ -12,9 +12,11 @@ import com.example.iqapp.Activities.MainActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.firebase.messaging.FirebaseMessaging;
 import com.google.firebase.messaging.FirebaseMessagingService;
+import com.google.firebase.messaging.RemoteMessage;
 
 public class MyFirebaseMessagingService extends FirebaseMessagingService {
     public MyFirebaseMessagingService() {
+        super();
     }
 
     @Override
@@ -26,5 +28,8 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         // FCM registration token to your app server.
     }
 
-
+    @Override
+    public void onMessageReceived(@NonNull RemoteMessage remoteMessage) {
+        super.onMessageReceived(remoteMessage);
+    }
 }
