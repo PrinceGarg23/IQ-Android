@@ -68,10 +68,6 @@ public class EventActivity extends AppCompatActivity{
 
                 }
             });
-
-
-
-
         }else{
             Toast.makeText(getApplicationContext(),"No internet Connection",Toast.LENGTH_LONG).show();
             load.setVisibility(View.GONE);

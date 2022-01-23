@@ -1,6 +1,8 @@
 package com.example.iqapp.Adapters;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -35,13 +37,23 @@ public class EventRecyclerViewAdapter extends RecyclerView.Adapter<EventRecycler
 
     @Override
     public void onBindViewHolder(@NonNull EventRecyclerViewAdapter.EventViewHolder holder, int position) {
+        position = getItemCount()-position-1;
         Event currentEvent = mEvents.get(position);
         String name = currentEvent.getName();
         String date = currentEvent.getDate();
         String poster = currentEvent.getPoster();
+        String url = currentEvent.getUrl();
         holder.eventName.setText(name);
         holder.eventDate.setText(date);
         Glide.with(mContext).load(poster).into(holder.posterView);
+        holder.posterView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri uri = Uri.parse(url);
+                Intent intent = new Intent(Intent.ACTION_VIEW,uri);
+                v.getContext().startActivity(intent);
+            }
+        });
     }
 
     @Override
